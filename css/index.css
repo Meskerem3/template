@@ -1,14 +1,10 @@
 html,
 body {
   background-color: white;
-
   margin-top: 0%;
   margin-bottom: 20%;
   margin-left: 5%;
   margin-right: 10%;
-
-
-
 }
 
 .headline-container {
@@ -16,14 +12,11 @@ body {
   font-weight: 900;
   font-size: 30px;
   line-height: 130%;
-
   color: black;
-
 }
 
 .headline-container-pos {
   font-size: 20px;
-
   color: rgb(71, 123, 235);
 }
 
@@ -36,7 +29,6 @@ body {
   font-weight: 200;
   font-size: 20px;
   line-height: 140%;
-
   color: rgb(53, 52, 52);
 }
 
@@ -55,17 +47,10 @@ body {
   left: 143px;
   gap: 10px;
   justify-content: space-between;
-  align-items: center;
   line-height: 20px;
   text-align: left;
-
-
   color: rgb(71, 123, 235);
-
-
 }
-
-
 
 .menu-list {
   font-family: "Inter", sans-serif;
@@ -76,9 +61,7 @@ body {
   color: rgb(71, 123, 235);
   display: block;
   border: none;
-
 }
-
 
 .menu-items a {
   text-decoration: none;
@@ -86,14 +69,12 @@ body {
 
 .menu-items a:hover {
   color: red;
-
 }
 
 .r {
   position: absolute;
   margin: -0.75% 20% 50% 20%;
   left: 55%;
-
 }
 
 .t {
@@ -112,21 +93,17 @@ body {
   position: absolute;
   margin: 3% 7% 0% 9%;
   left: 0;
-
 }
 
 .a {
   position: absolute;
   margin: -5% 20% 40% 20%;
   left: 55%;
-
-
 }
 
 .m {
   position: absolute;
   margin: -2% 7% 0% 35%;
-
 }
 
 .y {
@@ -135,16 +112,11 @@ body {
   left: 0;
 }
 
-
-
-
 @media (max-width: 767px) {
   .menu-items {
     display: none;
     text-decoration: none;
   }
-
-
 
   .menu-toggle img {
     display: block;
@@ -156,8 +128,6 @@ body {
   .menu-toggle {
     border: none;
     display: none;
-
-
   }
 
   .menu-items {
@@ -168,16 +138,8 @@ body {
     justify-content: flex-end;
   }
 
-
-
   .menu-items li {
     display: block;
     margin: 19px;
-
-
   }
-
-
-
-
 }
