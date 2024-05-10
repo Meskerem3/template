@@ -1,0 +1,145 @@
+html,
+body {
+  background-color: white;
+  margin-top: 0%;
+  margin-bottom: 20%;
+  margin-left: 5%;
+  margin-right: 10%;
+}
+
+.headline-container {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 130%;
+  color: black;
+}
+
+.headline-container-pos {
+  font-size: 20px;
+  color: rgb(71, 123, 235);
+}
+
+.headline-container-pos:hover {
+  color: red;
+}
+
+.headline-container-para {
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 140%;
+  color: rgb(53, 52, 52);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column align-item center;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 10px 12px 10px 12px;
+  align-items: center;
+  z-index: 100%;
+  left: 143px;
+  gap: 10px;
+  justify-content: space-between;
+  line-height: 20px;
+  text-align: left;
+  color: rgb(71, 123, 235);
+}
+
+.menu-list {
+  font-family: "Inter", sans-serif;
+  font-weight: 250;
+  font-size: 30px;
+  line-height: 137%;
+  text-align: right;
+  color: rgb(71, 123, 235);
+  display: block;
+  border: none;
+}
+
+.menu-items a {
+  text-decoration: none;
+}
+
+.menu-items a:hover {
+  color: red;
+}
+
+.r {
+  position: absolute;
+  margin: -0.75% 20% 50% 20%;
+  left: 55%;
+}
+
+.t {
+  position: absolute;
+  margin: 0% 40% 0% 30%;
+  right: 0;
+}
+
+.p {
+  position: absolute;
+  margin: 0% 40% 0% 30%;
+  right: 0;
+}
+
+.u {
+  position: absolute;
+  margin: 3% 7% 0% 9%;
+  left: 0;
+}
+
+.a {
+  position: absolute;
+  margin: -5% 20% 40% 20%;
+  left: 55%;
+}
+
+.m {
+  position: absolute;
+  margin: -2% 7% 0% 35%;
+}
+
+.y {
+  position: absolute;
+  margin: 4.5% 7% 0% 9%;
+  left: 0;
+}
+
+@media (max-width: 767px) {
+  .menu-items {
+    display: none;
+    text-decoration: none;
+  }
+
+  .menu-toggle img {
+    display: block;
+    border: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    border: none;
+    display: none;
+  }
+
+  .menu-items {
+    display: flex;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5px 10px;
+    justify-content: flex-end;
+  }
+
+  .menu-items li {
+    display: block;
+    margin: 19px;
+  }
+}
