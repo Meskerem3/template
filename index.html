@@ -20,23 +20,29 @@
 
         <section class="menu">
             <h2> My Logo</h2>
-            <nav class="menu-list">
-                <div class="menu-toggle">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M11 15C11 14.4477 11.4477 14 12 14H28C28.5523 14 29 14.4477 29 15C29 15.5523 28.5523 16 28 16H12C11.4477 16 11 15.5523 11 15ZM11 20C11 19.4477 11.4477 19 12 19L28 19C28.5523 19 29 19.4477 29 20C29 20.5523 28.5523 21 28 21L12 21C11.4477 21 11 20.5523 11 20ZM12 24C11.4477 24 11 24.4477 11 25C11 25.5523 11.4477 26 12 26H28C28.5523 26 29 25.5523 29 25C29 24.4477 28.5523 24 28 24H12Z"
-                            fill="#6070FF" />
-                    </svg>
-
-
-                </div>
-                <ul class="menu-items">
+            <nav>
+                <ul class="sidebar">
+                    <li onclick=hideSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                                <path
+                                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                            </svg></a></li>
                     <li><a href="#">portfolio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+
+                <ul class="menu-items">
+                    <li class="hideOnMobile"><a href="#">portfolio</a></li>
+                    <li class="hideOnMobile"><a href="#about">About</a></li>
+                    <li class="hideOnMobile"><a href="#contact">contact</a></li>
+                    <li onclick=showSidebar() class="hideOnDesktop"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                height="34px" viewBox="0 -960 960 960" width="34px" fill="#5f6368">
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                            </svg></a></li>
                 </ul>
             </nav>
-
+            </div>
         </section>
         <div>
             <svg width="90" height="93" viewBox="0 0 90 93" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -125,6 +131,16 @@
                 </svg>
 
             </div>
+            <script>
+                function showSidebar() {
+                    const sidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'flex'
+                }
+                function hideSideBar() {
+                    const sidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'none'
+                }
+            </script>
     </section>
 
     <div>
@@ -355,7 +371,7 @@
         </div>
     </div>
 </section>
-<section class="bordered-section">
+<section class="bordered-section" id="about">
     <div>
         <div class="about">
             <h1><b>About</b></h1>
@@ -439,23 +455,29 @@
     </div>
 </section>
 
-<section class="bordered-section">
-
-    <div class="container">
-        <h2>Contact me</h2>
-        <p> If you have an applicationyou are interested in
-            developing,a feature that you need built or aproject that needs
-            coding.i would love to helpwith it.
-        </p>
-        <form action="https://formspree.io/f/mzbnweog" method="post">
-            <input type="text" id="name" name="name" maxlength="30" required placeholder="Enter your name ">
-            <input type="email" id="email" name="email" required placeholder="Enter your email">
-            <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
-            <button>Get in touch</button>
-        </form>
+<div class="contact" id="contact">
+    <div>
+        <div id="me">Contact me</div>
+        <div>
+            <p id="me2">
+                If you have an application you are interested in developing, a feature that you need built or
+                a project that needs coding.I’d love to help with it!
+            </p>
+        </div>
+        <div class="flex">
+            <form action="https://formspree.io/f/mzbnweog" method="post">
+                <input type="text" name="fullName" class="input" placeholder="Enter your name (up to 30 characters)"
+                    maxlength="30" required><br> <br>
+                <input type="email" name="email" class="input" placeholder="Enter your email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required
+                    title="Please enter a valid email address">
+                <br> <br>
+                <textarea class="area" name="message" placeholder="Write your message here" maxlength="500"
+                    required></textarea><br>
+                <input type="submit" class="get" value="Get in touch">
+            </form>
+        </div>
     </div>
-
-</section>
 
 
 </html>
