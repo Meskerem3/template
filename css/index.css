@@ -61,14 +61,6 @@ body {
   border: none;
 }
 
-/* .menu-items a {
-  text-decoration: none;
-}
-
-.menu-items a:hover {
-  color: red;
-} */
-
 .r {
   position: absolute;
   margin: -0.75% 20% 50% 20%;
@@ -159,10 +151,6 @@ nav a {
   color: black;
 }
 
-/* nav li:first-child {
-  margin-right: auto;
-} */
-
 .sidebar {
   position: fixed;
   top: 0%;
@@ -178,10 +166,6 @@ nav a {
   align-items: flex-start;
   justify-content: flex-start;
 }
-
-/* .sidebar li {
-  width: 100%;
-} */
 
 .contact {
   border: 1px solid #dfe1e6;
@@ -389,11 +373,6 @@ img {
     margin-left: -25%;
   }
 
-  /* .row ul.bjk li {
-    font-size: 25px;
-    margin-left: -30%;
-  } */
-
   .contact {
     padding-top: 10%;
     text-align: center;
@@ -439,4 +418,9 @@ img {
   .hideOnDesktop {
     visibility: hidden;
   }
+}
+
+.error-message {
+  color: rgb(12, 231, 74);
+  margin-bottom: 10px;
 }
